@@ -1,0 +1,38 @@
+{
+  "menuPrincipal": "¡Hola! ✨ Bienvenido a *Manos que Hablan*. ¿En qué puedo ayudarte hoy?\n\nEscribe el *número* de la opción que necesites:\n\n1️⃣ *Clases:* Fechas y horarios.\n2️⃣ *Precios:* ¿Cuánto cuesta?\n3️⃣ *Pagos:* ¿Cómo pagar?\n4️⃣ *Dirección:* ¿Dónde estamos?\n5️⃣ *Agendar:* Reservar mi lugar.\n6️⃣ *Cancelar:* Liberar mi hora.\n\nEscribe una opción o cuéntame tu duda. 😊",
+  "inteligencia": [
+    {
+      "claves": ["1", "clases", "cuando", "horario", "fecha"],
+      "respuesta": "🗓 *Próximo curso:* 13 al 16 de enero.\n⏰ *Hora:* 19:00 a 21:00 hrs.\n💻 *Vía:* Zoom (clases en vivo)."
+    },
+    {
+      "claves": ["2", "precio", "cuanto", "valor", "costo", "sale"],
+      "respuesta": "💰 *Valor:* $75.000 (Nivel Básico completo).\n🎁 *Incluye:* 4 clases en vivo, material digital y tu diploma de participación.",
+      "imagen": "afiche.jpg"
+    },
+    {
+      "claves": ["3", "pago", "transferencia", "webpay", "pagar", "datos"],
+      "respuesta": "💳 *Pagos:* Puedes usar Transferencia Bancaria o Tarjetas (Webpay).\n\n¿Necesitas los datos para transferir? Solo pídeme los *'datos de pago'*."
+    },
+    {
+      "claves": ["4", "donde", "ubicación", "direccion", "mapa", "ubicacion"],
+      "respuesta": "📍 *Estamos en:* Bustamante 126, Providencia, Santiago.\n🏠 Nuestro horario de atención es de 9:00 a 18:00 hrs."
+    },
+    {
+      "claves": ["5", "agendar", "cita", "cupo", "reservar"],
+      "respuesta": "📅 *¡Reserva tu lugar ahora!*\n\nEscribe la palabra *agendar* seguida del día y la hora.\n\n👉 Ejemplo: _agendar lunes a las 19:00_"
+    },
+    {
+      "claves": ["6", "cancelar", "borrar", "no puedo", "liberar"],
+      "respuesta": "¡No te preocupes! Entiendo que surgen imprevistos. 🗑️\n\nPara liberar tu cupo, por favor escribe la palabra *cancelar*."
+    },
+    {
+      "claves": ["8", "ayuda", "consulta", "opciones", "hola"],
+      "respuesta": "¡Hola! 👋 Bienvenido/a. Puedo ayudarte con información sobre clases, precios, ubicación o ayudarte a agendar un cupo. ¿Qué prefieres revisar?"
+    },
+    {
+      "claves": ["llamar", "llamada", "telefono"],
+      "respuesta": "📵 Por ahora prefiero escribirte por aquí para que ambos tengamos el respaldo de la información. ¡Dime qué necesitas! 😊"
+    }
+  ]
+}

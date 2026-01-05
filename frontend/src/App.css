@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+
+:root {
+  --primary: #2563eb;
+  --secondary: #facc15; /* El amarillo de yohablobien */
+  --dark: #0f172a;
+  --gray: #64748b;
+  --white: #ffffff;
+  --radius: 20px;
+  --shadow: 0 20px 40px -15px rgba(0,0,0,0.1);
+}
+
+body { 
+  font-family: 'Outfit', sans-serif; 
+  margin: 0; 
+  background: #f8fafc; 
+  color: var(--dark); 
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Glass Navbar - Transparencia elegante */
+.glass-nav {
+  position: fixed; top: 0; width: 100%; height: 80px;
+  background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px);
+  z-index: 1000; display: flex; align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.nav-container { 
+  width: 90%; max-width: 1200px; margin: 0 auto; 
+  display: flex; justify-content: space-between; align-items: center; 
+}
+
+.logo-moderno { font-size: 1.6rem; font-weight: 800; color: var(--primary); letter-spacing: -1px; }
+.logo-moderno span { color: var(--dark); }
+
+.btn-cta-nav { 
+  background: var(--primary); color: white; border: none; 
+  padding: 12px 28px; border-radius: 50px; font-weight: 600; cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-cta-nav:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3); }
+
+/* Hero Section con imagen de Niños Aprendiendo */
+.hero-section {
+  padding: 180px 10% 140px;
+  text-align: left;
+  position: relative;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  /* Imagen de niños + Degradado para legibilidad */
+  background: linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.45)), 
+              url('https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2070');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero-text {
+  max-width: 800px;
+  z-index: 2;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.05;
+  margin: 25px 0;
+  letter-spacing: -2px;
+}
+
+.hero-text h1 span {
+  color: var(--secondary); /* Resalte amarillo */
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  opacity: 0.95;
+  max-width: 650px;
+  margin-bottom: 45px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.pill-info { 
+  background: rgba(37, 99, 235, 0.2); 
+  border: 1px solid var(--primary);
+  color: #60a5fa; 
+  padding: 8px 20px; border-radius: 50px; 
+  font-size: 0.85rem; font-weight: 600; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Botón de Acción Principal Estilo Yohablobien */
+.btn-main {
+  background: var(--secondary);
+  color: var(--dark);
+  border: none;
+  padding: 20px 45px;
+  border-radius: 60px;
+  font-weight: 800;
+  font-size: 1.15rem;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 25px rgba(250, 204, 21, 0.2);
+}
+
+.btn-main:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 15px 30px rgba(250, 204, 21, 0.4);
+}
+
+/* Value Cards - Ahora con más aire y sombras suaves */
+.value-grid { 
+  display: grid; grid-template-columns: repeat(3, 1fr); 
+  gap: 35px; width: 90%; max-width: 1200px; 
+  margin: -80px auto 100px; 
+  position: relative; z-index: 5;
+}
+
+.value-card { 
+  background: white; padding: 50px 30px; 
+  border-radius: var(--radius); 
+  box-shadow: var(--shadow); 
+  text-align: center;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.value-card:hover { transform: translateY(-10px); }
+
+.value-icon { font-size: 2.5rem; margin-bottom: 20px; display: block; }
+.value-card h4 { font-size: 1.3rem; margin-bottom: 15px; font-weight: 700; }
+.value-card p { color: var(--gray); line-height: 1.6; font-size: 1rem; }
+
+/* Chat Window - Diseño Premium */
+.chat-window-styled {
+  position: fixed; bottom: 30px; right: 30px; width: 380px; height: 600px;
+  background: white; border-radius: 24px; display: flex; flex-direction: column;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.2); overflow: hidden; z-index: 2000;
+  animation: chatSlideIn 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.chat-head { 
+  background: var(--dark); color: white; padding: 25px; 
+  display: flex; justify-content: space-between; align-items: center;
+}
+
+.status-dot { 
+  width: 10px; height: 10px; background: #22c55e; 
+  border-radius: 50%; display: inline-block; margin-right: 10px; 
+  box-shadow: 0 0 10px #22c55e;
+}
+
+.chat-body { flex: 1; padding: 25px; overflow-y: auto; background: #fdfdfd; display: flex; flex-direction: column; gap: 15px; }
+
+.msg-wrap { display: flex; width: 100%; }
+.msg-wrap.mine { justify-content: flex-end; }
+
+.msg-content { 
+  padding: 14px 20px; border-radius: 18px; max-width: 80%; 
+  font-size: 0.95rem; line-height: 1.5; 
+}
+
+.theirs .msg-content { background: #f1f5f9; color: var(--dark); border-bottom-left-radius: 4px; }
+.mine .msg-content { background: var(--primary); color: white; border-bottom-right-radius: 4px; }
+
+.chat-footer { padding: 20px; display: flex; gap: 12px; border-top: 1px solid #f1f5f9; }
+.chat-footer input { 
+  flex: 1; border: 1px solid #e2e8f0; background: #f8fafc; 
+  padding: 14px 20px; border-radius: 50px; outline: none; transition: 0.3s;
+}
+.chat-footer input:focus { border-color: var(--primary); background: white; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes chatSlideIn {
+  from { opacity: 0; transform: scale(0.9) translateY(40px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* ... (Mantén todo el CSS previo que compartiste) ... */
+
+/* --- Adiciones para mejorar el diseño --- */
+
+.steps-section {
+  padding: 100px 10%;
+  background: #ffffff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 60px;
+  color: var(--dark);
+  letter-spacing: -1px;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.step-card {
+  flex: 1;
+  padding: 40px;
+  border-radius: var(--radius);
+  background: #f8fafc;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.step-card:hover {
+  transform: translateY(-10px);
+  background: white;
+  box-shadow: var(--shadow);
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+/* Chips rápidos en el chat */
+.quick-chips {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  animation: fadeInUp 0.5s ease;
+}
+
+.quick-chips button {
+  background: white;
+  border: 1.5px solid var(--primary);
+  color: var(--primary);
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quick-chips button:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* Botón de consulta flotante */
+.chat-trigger-wrapper {
+  position: fixed; bottom: 30px; right: 30px; z-index: 2000;
+  display: flex; flex-direction: column; align-items: flex-end;
+}
+
+.btn-consulta-premium {
+  background: var(--dark); color: white; border: none;
+  padding: 12px 24px; border-radius: 60px; display: flex;
+  align-items: center; gap: 15px; cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: 0.3s;
+}
+
+.btn-consulta-premium:hover { transform: translateY(-5px); background: var(--primary); }
+
+.pulse-container {
+  position: relative; width: 40px; height: 40px;
+  background: rgba(255,255,255,0.1); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.pulse-ring {
+  position: absolute; width: 100%; height: 100%;
+  border-radius: 50%; background: white; opacity: 0.5;
+  animation: pulse-ring 2s infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 0.5; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+
+.btn-txt { text-align: left; display: flex; flex-direction: column; }
+.btn-txt span { font-size: 0.75rem; opacity: 0.8; }
+.btn-txt strong { font-size: 0.95rem; }
+
+.chat-notif-bubble {
+  background: white; padding: 12px 20px; border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 15px;
+  font-size: 0.9rem; border-left: 4px solid var(--primary);
+  position: relative; animation: fadeInUp 0.5s ease;
+}
+
+.close-notif {
+  position: absolute; top: -5px; right: -5px; background: var(--dark);
+  color: white; border: none; border-radius: 50%; width: 20px; height: 20px; cursor: pointer;
+}

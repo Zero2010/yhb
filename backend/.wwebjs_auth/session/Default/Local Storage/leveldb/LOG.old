@@ -1,0 +1,6 @@
+2026/01/03-13:37:30.934 8802 Reusing MANIFEST /home/kali/Escritorio/yohablobien/backend/.wwebjs_auth/session/Default/Local Storage/leveldb/MANIFEST-000001
+2026/01/03-13:37:30.938 8802 Recovering log #3
+2026/01/03-13:37:30.947 8802 Reusing old log /home/kali/Escritorio/yohablobien/backend/.wwebjs_auth/session/Default/Local Storage/leveldb/000003.log 
+2026/01/03-13:39:32.589 887d Level-0 table #5: started
+2026/01/03-13:39:32.597 887d Level-0 table #5: 19223 bytes OK
+2026/01/03-13:39:32.605 887d Delete type=0 #3
